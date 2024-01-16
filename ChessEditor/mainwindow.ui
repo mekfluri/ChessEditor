@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="ChessView" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_Chessboard"/>
+    <addaction name="actionSave_Chessboard"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionEdit_Chess_Dialog"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen_file"/>
+   <addaction name="actionsave_file"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionLoad_Chessboard">
+   <property name="text">
+    <string>Load Chessboard</string>
+   </property>
+  </action>
+  <action name="actionSave_Chessboard">
+   <property name="text">
+    <string>Save Chessboard</string>
+   </property>
+  </action>
+  <action name="actionEdit_Chess_Dialog">
+   <property name="text">
+    <string>Edit Chess Dialog</string>
+   </property>
+  </action>
+  <action name="actionsave_file">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/save.png</normaloff>:/resources/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save file</string>
+   </property>
+  </action>
+  <action name="actionopen_file">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/open.png</normaloff>:/resources/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>open file </string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ChessView</class>
+   <extends>QWidget</extends>
+   <header>chessview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

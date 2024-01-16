@@ -1,0 +1,11 @@
+debug/chessdoc.o
+debug/chesssquare.o
+debug/chesssquaredialog.o
+debug/chessview.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_Resursi.o
+debug/moc_chessdoc.o
+debug/moc_chesssquaredialog.o
+debug/moc_chessview.o
+debug/moc_mainwindow.o

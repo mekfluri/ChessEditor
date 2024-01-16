@@ -1,0 +1,11 @@
+release/chessdoc.o
+release/chesssquare.o
+release/chesssquaredialog.o
+release/chessview.o
+release/main.o
+release/mainwindow.o
+release/qrc_Resursi.o
+release/moc_chessdoc.o
+release/moc_chesssquaredialog.o
+release/moc_chessview.o
+release/moc_mainwindow.o
